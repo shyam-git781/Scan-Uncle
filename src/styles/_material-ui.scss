@@ -1,0 +1,17 @@
+/* stylelint-disable selector-class-pattern */
+.MuiOutlinedInput-root {
+  border: 0 !important;
+  //border-radius: 50px !important;
+}
+
+.MuiSelect-select:focus {
+  background: transparent !important;
+}
+
+.MuiRating-root {
+  align-items: center;
+}
+
+$mui-black: rgba(0, 0, 0, 0.87);
+
+/* stylelint-enable selector-class-pattern */

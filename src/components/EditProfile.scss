@@ -1,0 +1,33 @@
+@import "../Constants/color";
+
+.edit-container{
+  display: flex;
+  height: 100vh;
+  //background-color: $light-purple;
+
+  //background-color: #7747FF;
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $slight-grey;
+    width: 100vw;
+    height: 80px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+    //background-color: #cbb9ff;
+    height: auto;
+    .text-field {
+     margin-top: 15px;
+      //align-self: center;
+      //justify-content: center;
+      //align-items: center;
+      width: 90%;
+    }
+  }
+}

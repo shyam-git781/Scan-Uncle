@@ -1,0 +1,111 @@
+$purple: #7747FF;
+$dark-grey: #ACABAB;
+$slight-grey: #DFDFDF;
+$medium-grey: #C4C4C4;
+$black: #424242;
+$white: #FFF;
+$dark-blue: #0B3954;
+$blue: #157DB8;
+$grey: #EFEFEF;
+$backdrop-color: rgba(0, 0, 0, 0.76);
+$aramark-red: #EA1C2D;
+$light-purple: #CBB9FF;
+
+* {
+  //color: $black;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.color-blue-hover {
+  color: $blue;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.color-purple {
+  color: $purple;
+}
+
+.color-purple {
+  color: $purple;
+}
+
+.color-grey {
+  color: $dark-grey;
+}
+
+.color-hover-purple {
+  &:hover {
+    color: $purple;
+  }
+}
+
+.color-white {
+  color: $white;
+}
+
+.color-red {
+  color: $aramark-red;
+}
+
+.color-orange {
+  color: #FFAF37;
+}
+
+.color-green {
+  color: #379340;
+}
+
+.background-purple {
+  background: $purple;
+}
+
+.tier-1 {
+  background: #379340;
+}
+
+.tier-2 {
+  background: #FFA901;
+}
+
+.background-black {
+  background: $black;
+}
+
+.background-dark-blue {
+  background: $dark-blue;
+}
+
+.background-blue {
+  background: $blue;
+}
+
+.background-grey {
+  background: $grey;
+}
+
+.background-white {
+  background: $white;
+}
+
+.background-dark-grey {
+  background: $dark-grey;
+}
+
+.background-medium-grey {
+  background: $medium-grey;
+}
+
+.background-aramark-red {
+  background: $aramark-red;
+}
+
+.background-transparent {
+  background: transparent;
+}
+

@@ -1,0 +1,70 @@
+@import "../color";
+@import "../material-ui";
+
+
+input {
+  color: $black;
+}
+
+.input-container-pfs {
+  //@extend .default-input-container;
+  //
+  //border: 0 solid red;
+  input {
+    margin-left: auto;
+    width: 100%;
+    //height: 48px;
+    border: 0 solid white;
+    //justify-content: end;
+    //align-items: end;
+    text-align: end;
+    outline: none;
+    :focus,
+    &:hover {
+      border: 0 solid white;
+      outline: none;
+    }
+  }
+}
+
+.default-input-container {
+
+  :focus,
+  :hover {
+    border: 1px solid $purple;
+    outline: none;
+  }
+
+  input {
+    //@extend .border-radius-50;
+    @extend .border-dark-grey;
+    width: 100%;
+    background: $white;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-indent: 13px;
+
+    &:focus {
+      color: $purple;
+    }
+  }
+}
+
+.default-text-area {
+
+  border-radius: 5px;
+  border: 1px solid #ACABAB;
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-top: 4px;
+  resize: none;
+
+  &:focus,
+  &:hover {
+    border: 1px solid $purple;
+    outline: none;
+    color: $purple;
+  }
+}

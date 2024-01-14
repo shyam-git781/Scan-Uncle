@@ -1,0 +1,88 @@
+@import "../Constants/color";
+
+.tag-container {
+  display: flex;
+  height: 100vh;
+  //background-color: $light-purple;
+  .sub-cont {
+    //background-color: #7747FF;
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $slight-grey;
+      width: 100vw;
+      height: 80px;
+    }
+
+    .header-cell{
+      display: flex;
+      width: auto;
+      height: 30px;
+      //background-color: #7747FF;
+      padding-left: 20px;
+      justify-content: start;
+      align-items: center;
+      border-bottom: 0.5px grey solid;
+      .vehicle-number{
+        width: 80%;
+        font-weight: bold;
+        //background-color: #cbb9ff;
+      }
+      .active-label{
+        //width: 30%;
+        //background-color: yellow;
+      }
+      .toggle{
+        width: 20%;
+        font-weight: bold;
+        //background-color: red;
+      }
+    }
+
+    .tag-cell {
+      display: flex;
+      width: auto;
+      height: 40px;
+      background-color: $slight-grey;
+      padding-left: 20px;
+      justify-content: start;
+      align-items: center;
+      border-bottom: 0.5px grey solid;
+      .vehicle-number{
+        width: 80%;
+        //background-color: #cbb9ff;
+      }
+      .active-label{
+        //width: 30%;
+        //background-color: yellow;
+      }
+      .toggle{
+        width: 20%;
+        //background-color: red;
+      }
+    }
+    .tag-cell-sec {
+      display: flex;
+      width: auto;
+      height: 40px;
+      //background-color: #7747FF;
+      padding-left: 20px;
+      justify-content: start;
+      align-items: center;
+      border-bottom: 0.5px grey solid;
+      .vehicle-number{
+        width: 80%;
+        //background-color: #cbb9ff;
+      }
+      .active-label{
+        //width: 30%;
+        //background-color: yellow;
+      }
+      .toggle{
+        width: 20%;
+        //background-color: red;
+      }
+    }
+  }
+}

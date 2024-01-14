@@ -1,0 +1,71 @@
+@import "../Constants/color";
+
+.container-home{
+  background-color: $light-purple;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .sign-up-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 75%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      display: flex;
+      height: 20%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      //background-color: red;
+      .logo {
+        //margin-left: 15px;
+        //margin-top: 15px;
+      }
+
+      .div {
+        display: flex;
+        //background-color: #7747FF;
+        align-items: center;
+        width: 100%;
+        //height: 50px;
+        justify-content: center;
+
+        .map-tag {
+          //align-self: center;
+          font-size: 24px;
+          font-weight: bold;
+          margin-top: 20px;
+          //margin-right: 40px;
+        }
+      }
+    }
+
+    .form-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .text-field{
+      margin-top: 15px;
+    }
+    //align-self: center;
+  }
+}
+
+@media (max-width: $media-query-max-width) {
+  .container-home{
+    .sign-up-container{
+      height: 80%;
+      width: 80%;
+    }
+  }
+}

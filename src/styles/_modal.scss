@@ -1,0 +1,99 @@
+@import 'src/styles/spacing';
+@import 'src/styles/border';
+@import 'src/styles/font';
+@import 'src/styles/layout';
+
+$large-modal-container-width: 708px;
+$large-modal-container-height: 581px;
+$modal-z-index: 21;
+$modal-backdrop-z-index: 20;
+
+
+.large-confirmation-header {
+  @extend .color-white;
+  @extend .font-weight-bold;
+  @extend .background-purple;
+  @extend .full-height;
+  @extend .border-radius-10;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-confirmation-message {
+  @extend .color-white;
+  @extend .font-size-40;
+  @extend .margin-top-4;
+  @extend .font-weight-bold;
+  @extend .margin-horizontal-120;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.medium-confirmation-message {
+  @extend .color-white;
+  @extend .margin-top-4;
+  @extend .font-weight-bold;
+  @extend .margin-horizontal-120;
+  font-size: 30px;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+
+.modal-opened-container {
+  @extend .border-radius-10;
+  align-self: center;
+
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 25%;
+  //overflow: scroll;
+  position: fixed;
+  top: 5%;
+  z-index: $modal-z-index;
+}
+
+.large-modal-opened-container {
+  @extend .modal-opened-container;
+  align-items: center !important;
+  display: flex !important;
+  height: $large-modal-container-height;
+  justify-content: center !important;
+  width: $large-modal-container-width;
+}
+
+.modal-opened-backdrop {
+  @extend .full-height;
+  @extend .full-width;
+  //background: $backdrop-color;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: $modal-backdrop-z-index;
+}
+
+//this is for support react-bootstrap/Modal
+.modal-backdrop {
+  z-index: unset !important;
+}
+
+@media (max-width: $media-query-max-width) {
+  .large-confirmation-message {
+    margin: 24px 40px 44px !important;
+  }
+
+  .medium-confirmation-message {
+    margin: 24px 40px 44px !important;
+  }
+
+  .large-modal-opened-container {
+    height: 92% !important;
+    left: 4%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto !important;
+    top: 2%;
+    width: 92% !important;
+  }
+}
