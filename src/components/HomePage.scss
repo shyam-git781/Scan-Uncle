@@ -47,6 +47,7 @@
           margin-top: 20px;
           //margin-right: 40px;
         }
+       
       }
     }
 
@@ -60,7 +61,54 @@
     //align-self: center;
   }
 }
+.main-view{
+  background-color: red;
+  height: 100vh;
 
+  .detail-view{
+    background-color: white;
+       height:700px;
+       width:100%;
+       padding: 4% ;
+       display:flex;
+       align-items:center;
+       justify-content: space-between ;
+       flex-direction:row
+      
+  }
+  .header-logo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: $light-purple;
+    padding-top: 6%;
+    padding-bottom: 6%;
+
+  }
+  .welcome-class{
+      background-color:whitesmoke;
+      padding-left:8%;
+      justify-content:space-between;
+       align-items:center;
+       display:flex;
+       width: 100%;
+  }
+  .welcome-font{
+    font-size: 50px;
+    font-weight: bold;
+    color: black
+  }
+  .tag-view{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+}
 @media (max-width: $media-query-max-width) {
   .container-home{
     .sign-up-container{
